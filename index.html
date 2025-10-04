@@ -405,6 +405,50 @@
         </div>
 
         <div class="section">
+            <h2><span class="icon">💻</span> Setup Instructions (Step-by-Step)</h2>
+            <div class="editable" contenteditable="true" data-section="setup">
+                <strong>Follow these steps exactly:</strong><br><br>
+                
+                1. <strong>Open Git Bash on Windows</strong><br>
+                   • Click Start menu<br>
+                   • Type "Git Bash"<br>
+                   • Click on Git Bash icon<br><br>
+                
+                2. <strong>Copy and run these commands (one at a time)</strong><br>
+                   • Highlight each line below<br>
+                   • Press CTRL+C to copy<br>
+                   • In Git Bash, press SHIFT+INSERT to paste (or right-click → Paste)<br>
+                   • Press ENTER after each command<br><br>
+                
+                <div style="background: #000; color: #0f0; padding: 10px; border-radius: 5px; font-family: monospace; margin: 10px 0;">
+# Create Vite project but make sure to use other than latest (compat issues with tailwind)<br>
+npm create vite@4 space-apps-iss -- --template react<br><br>
+
+# Move into the project folder<br>
+cd space-apps-iss<br><br>
+
+# Install dependencies<br>
+npm install<br><br>
+
+# Install Tailwind CSS v3 with compatible PostCSS<br>
+npm install -D tailwindcss@3.3.0 postcss@8.4.31 autoprefixer@10.4.16<br><br>
+
+# Initialize Tailwind<br>
+npx tailwindcss init -p
+                </div>
+                
+                3. <strong>Wait for each command to finish before running the next one!</strong><br>
+                   • You'll see text scrolling - that's normal<br>
+                   • When you see the blinking cursor again, it's ready for the next command<br><br>
+                
+                4. <strong>If something goes wrong:</strong><br>
+                   • Don't panic!<br>
+                   • Take a screenshot of the error<br>
+                   • Ask Lorenzo for help
+            </div>
+        </div>
+
+        <div class="section">
             <h2><span class="icon">🔗</span> Important Links</h2>
             <div class="editable" contenteditable="true" data-section="links">
                 • NASA Space Apps Website: [Add URL]<br>
